@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="/process" method="post">
+        <div>
+            <label>*First Name:</label>
+            <input type="text" name="First Name" placeholder="Please Enter Your First Name">
+        </div>
+        <div>
+            <label>*Last Name:</label>
+            <input type="text" name="Last Name" placeholder="Please Enter Your Last Name">
+        </div>
+        <div>
+            <label>*Email:</label>
+            <input type="text" name="Email" placeholder="Please Enter Your Email">
+        </div>
+        <div>
+            <label>*Password:</label>
+            <input type="text" name="First Name" placeholder="Please Enter Your Password">
+        </div>
+        <div>
+            <label>*Confirm Password:</label>
+            <input type="text" name="First Name" placeholder="Please Confirm Your Password">
+        </div>
+        <div>
+            <label>*Name:</label>
+            <input type="date" name="dob" placeholder="Please Enter Your Birthday">
+        </div>
+        <div>
+            <label>*Gender Identity:</label>
+            <input type="radio" name="dob" value="Male" id="male">
+            <label for="normal">Male</label>
+            <input type="radio" name="dob" value="Female" id="female">
+            <label for="normal">Female</label>
+            <input type="radio" name="dob" value="Non-Binary" id="nb">
+            <label for="normal">Non-Binary</label>
+            <input type="radio" name="dob" value="I do not wish to answer" id="nopref">
+            <label for="normal">I do not wish to answer</label>
+        </div>
+        <p>Tell us about You!</p>
+        <div>
+            <textarea cols="50" rows="5"></textarea>
+        </div>
+        <div>
+            <label>What's your favorite programming language?</label>
+            <select name="Favorite Language">
+
+                <option>Java</option>
+                <option>Python</option>
+                <option>C#</option>
+                <option>C++</option>
+            </select>
+
+
+        </div>
+        <div>
+            <input type="checkbox" name="accept" id="accept">
+            <label for="accept">I would like to receieve email updates</label>
+
+        </div>
+        <div>
+            <input type="submit" value="Complete Registration" id="signup">
+
+
+
+        </div>
+        <p>
+            * Indicates a required field.
+        </p>
+
+    </form>
+
+</body>
+
+</html>
