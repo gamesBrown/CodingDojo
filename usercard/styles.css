@@ -38,6 +38,7 @@
     border-radius: 50%;
 }
 .cardBottom{
+    padding-top:75px;
     
     
 }
@@ -50,8 +51,7 @@
 .cardBottom > *{
     margin-left: 20px;
     font-family: cursive;
-    position: relative;
-    top: 80px;
+    
 }
 .cardBottom > h4{
     margin-top: 5px;
