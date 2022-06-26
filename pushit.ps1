@@ -1,7 +1,7 @@
 ﻿
 gh repo create
 
-$repo_name= Read-Host -Prompt "Enter Project Nam"
+$repo_name= Read-Host -Prompt "Enter Project Name"
 $comment = Read-Host -Prompt "Enter First Commit Comment"
 
 git init
