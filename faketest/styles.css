@@ -1,0 +1,137 @@
+*{
+    
+    margin:0;
+    padding:0;
+    
+}
+.container{
+
+    background-color: aqua;
+    
+    
+    
+    
+}
+#carosel{
+    background-color: green;
+    flex:4;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding-bottom: 10%;
+
+}
+#caroselDots{
+    
+    flex:1;
+    display: flex;
+    margin-left: 30%;
+    margin-right: 30%;
+
+}
+.caroselDot{
+    background-color: blueviolet;
+    flex:1;
+    border: 2px solid black;
+    border-radius: 10%;
+    height: 20%;
+    margin-left: 5%;
+}
+#shopBoxes{
+    
+    flex:7;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    justify-content: space-around;
+    
+
+}
+.shopBox{
+    flex:1;
+    
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right:5%;
+    
+
+}
+.shopBoxElements{
+    flex: 1;
+    outline:1px solid green;
+    display: flex;
+
+}
+.square{
+    flex:1;
+    width: 30%;
+    color: white;
+    margin:5% 5% 5% 5%;
+    border-radius: 5%;
+    
+    
+}
+.purple{
+    background-color: blueviolet;
+    box-shadow: 3px 2px black;
+}
+.green{
+    background-color: green;
+    box-shadow: 3px 2px black;
+}
+
+
+
+#main{
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    border:1px solid black;
+    display:flex;
+    flex-direction: column;
+    
+    
+
+}
+
+#nav-bar{
+    background-color: black;
+    flex:2;
+    display:flex;
+    align-items: center;
+    
+}
+#nav-top{
+    height:1.5%;
+    background-color: blueviolet;
+}
+
+.nav-links{
+    display: flex;
+    width: 100%;
+}
+.nav-links >li{
+    outline:1px solid blue;
+    flex:1;
+    color:white;
+    font-size: xx-large;
+    list-style-type: none;
+    
+}
+li>img{
+    /*Stuff here for imamge resizing*/
+}
+
+#coding{
+    padding-right: 50%;
+}
+#dojo{
+    color: blueviolet;
+    
+     
+    
+}

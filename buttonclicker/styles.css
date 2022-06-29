@@ -1,0 +1,91 @@
+*{
+    
+    margin:0;
+    padding:0;
+    outline: 1px solid red;
+    
+}
+#mainContainer{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    
+ 
+        
+}
+
+
+#nav-bar{
+    height: 20%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    color: white;
+
+}
+#nav-links{
+    display:flex;
+    flex:1;
+    justify-content: space-between;
+    padding-left: 50px;
+    
+
+}
+#nav-links li{
+    flex:1;
+    align-self: center;
+    list-style-type: none;
+
+    
+}
+
+
+#main{
+      
+    width: 800px;
+    height: 600px;
+    background-color: moccasin;
+    border:1px solid black;
+    margin-left: 7%;
+    margin-right: 7%;
+
+}
+
+#columnLeft{
+    background-color: blueviolet;
+    flex: 2;
+    display:flex;
+    flex-direction: column;
+
+}
+#columnRight{
+    background-color: brown;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardLeft{
+    flex:1;
+    background-color: aquamarine;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+
+}
+.leftSideCard{
+    flex:1;
+    
+    background-color: aquamarine;
+}
+
+#rightSideCard{
+    flex:none;
+    height:35%;
+    
+}
+.card{
+    flex:1;
+    background-color: green;
+    margin: 10%;
+}
