@@ -62,18 +62,49 @@ h1{
 .container{
     flex:1;
 }
+#playerHud{
+    flex:2;
+    display: flex;
+}
+#opponentHud{
+    flex:2;
+}
+#yourPokemonImage{
+    flex:1;
+}
 #fightBar{
 display: flex;
-flex:1;
+flex:2;
 
 }
 
-#descrptionTextBox{
-    flex:1;
+#descriptionTextBox{
+    flex:3;
+    border: 2px solid black;
+    box-shadow: inset 0 0 0 3px grey;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 #fightOptions{
-    display: flex;
-    flex:1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row: auto auto;
+    
+    flex:2;
+    box-shadow: inset 0 0 0 3px grey;
+    border-radius: 5px;
+    border: 2px solid black;
+
 
 }
+.fightOption{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
