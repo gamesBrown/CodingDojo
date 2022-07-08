@@ -1,7 +1,8 @@
 *{
-    outline: 1px solid red;
+   
     margin:0;
     padding:0;
+    font-family: 'Press Start 2P', cursive;
 }
 #gameBoyBorder{
     margin:auto;
@@ -24,6 +25,7 @@
     width: 75%;
     margin: auto;
    margin-top: 2%;
+   z-index: -1;
     
     
 
@@ -44,7 +46,7 @@
 p{
     position: relative;
     top: 25%;
-    left: 5%;
+    left: 1%;
     color: white;
     vertical-align: bottom;
     display: inline;
@@ -55,26 +57,133 @@ h1{
     position: relative;
     display: inline;
     top: 85%;
-    left:31%;
+    left:15%;
     color: white;
 
 }
 .container{
     flex:1;
 }
-#playerHud{
-    flex:2;
+#pokemonHealthBar{
+    display: block;
+    height: 80px;
+    width: 200px;
+    border: 3px solid black;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    box-shadow: inset;
+    margin-top: 100px;
+    margin-left: 80px;
     display: flex;
+    flex-direction: column;
 }
+.pokemonHealthBarSubcontent{
+    flex:1;
+}
+/*pokemon health bar child elements*/
+#pokemonHealthBarContainer{
+    flex:1;
+    display: flex;
+    
+    
+}
+#hudHP{
+flex:1;
+display: flex;
+align-items: center;
+font-size: x-small
+
+}
+#hudXP{
+    display: flex;
+    flex:1;
+    align-items: center;
+
+}
+#hudHP> .miniBar {background-color:rgb(47, 253, 109)
+    
+    }
+#hudXP>.miniBar{
+    background-color: aqua;
+        
+    
+}
+#hudName{
+    display: flex;
+    flex:1;
+
+}
+.miniBar{
+    outline: 1px solid black;
+    height: 20%;
+    width: 60%;
+    min-width: 60%;
+    border: 1px solid grey;
+    
+}
+
+#playerHud{
+    flex:3;
+    display: flex;
+    
+}
+
+#playerHud>*{
+    
+    flex:3;
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+
+}
+#yourPokemonImage{
+    
+    
+    height: 200px;
+    
+
+}
+.pokemonImageBox{
+    display: flex;
+    position: relative;
+    z-index: 0;
+    top:60px;
+    left:80px;
+        
+}
+.pokemonOppImageBox{
+    display: flex;
+    position: relative;
+    z-index: 0;
+    float:right;
+    height: 170px;
+    right: 80px;
+    
+
+  
+        
+}
+
+.OppHealthBar{
+    position: relative;
+    bottom: 40px;
+    left:50px
+}
+
+
 #opponentHud{
     flex:2;
 }
-#yourPokemonImage{
-    flex:1;
-}
+
 #fightBar{
 display: flex;
 flex:2;
+z-index: 1;
+background-color: white;
+
 
 }
 
@@ -97,6 +206,8 @@ flex:2;
     box-shadow: inset 0 0 0 3px grey;
     border-radius: 5px;
     border: 2px solid black;
+    flex-shrink: 0;
+    
 
 
 }

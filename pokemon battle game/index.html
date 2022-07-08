@@ -6,35 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="gameBoyBorder">
       <div id="battery"></div>
       <p>Battery</p>
-      <h1>GameBoy COLOR</h1>
+      <h1>GameBoyCOLOR</h1>
       <div id="gameBoyScreen">
-        <div class="container"></div>
-        <div class="container"></div>
-        <div class="container"></div>
-        <div class="container"></div>
-        <div id="playerHud"><div class="container"><img id ="yourPokemonImage" src="" alt="your pokemon!" srcset=""></div><div class="container"></div></div>
-        <div id="fightBar">
-          <div id="descriptionTextBox"><input value="glaceon" placeholder="Choose a pokemon!" title="choose a pokermon" type="input" id="testChoose"><button onclick="fetchPokemon()"id="pokeButton">pokebutton</button></div>
-          <div id="fightOptions">
-            <div class="fightOption">First</div>
-            <div class="fightOption">Second</div>
-            <div class="fightOption">Third</div>
-            <div class="fightOption">Fourth</div>
+        <div id="opponentHud"><div class="pokemonOppImageBox">
+          <img id="oppPokemonImage" src="" alt="your pokemon!" srcset="" />
+        </div>
+       
+          <div id="pokemonHealthBar" class="OppHealthBar">
+            <div id="hudName">Charizard (M) Level 46</div>
+            <div id="hudHP">
+              <div class="miniBar"></div>
+              <h4>127/127</h4>
+            </div>
+            <div id="hudXP">
+              <div class="miniBar"></div>
+              XP
+            </div>
+          </div>
+        
+      </div>
+        <div id="playerHud">
+          <div class="pokemonImageBox">
+            <img id="yourPokemonImage" src="" alt="your pokemon!" srcset="" />
+          </div>
+          <div id="pokemonHealthBarContainer">
+            <div id="pokemonHealthBar">
+              <div id="hudName">Glaceon (F) Level 5</div>
+              <div id="hudHP">
+                <div class="miniBar"></div>
+                <h4>40/40</h4>
+              </div>
+              <div id="hudXP">
+                <div class="miniBar"></div>
+                XP
+              </div>
+            </div>
           </div>
         </div>
-        
-
-
+        <div id="fightBar">
+          <div id="descriptionTextBox">
+            <input
+              value="glaceon"
+              placeholder="Choose a pokemon!"
+              title="choose a pokermon"
+              type="input"
+              id="testChoose"
+            /><button onclick="fetchYourPokemon()" id="pokeButton">
+              pokebutton
+            </button>
+          </div>
+          <div id="fightOptions">
+            <div class="fightOption">Fight</div>
+            <div class="fightOption">Bag</div>
+            <div class="fightOption">PokeMon</div>
+            <div class="fightOption">Run</div>
+          </div>
+        </div>
       </div>
-
-
     </div>
-
 
     <script src="script.js"></script>
   </body>
